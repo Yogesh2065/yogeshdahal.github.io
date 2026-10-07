@@ -1,0 +1,234 @@
+cd /mnt/user-data/outputs/portfolio-site && cat > index.html << 'EOF'
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yogesh Dahal | IT and CAD</title>
+  <meta name="description" content="Portfolio of Yogesh Dahal, IT and CAD graduate from Japan. Skills in programming, AutoCAD, and JW CAD.">
+  <meta name="theme-color" content="#17325C">
+
+  <meta property="og:title" content="Yogesh Dahal | IT and CAD">
+  <meta property="og:description" content="Portfolio of Yogesh Dahal, IT and CAD graduate from Japan.">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- ===== HEADER ===== -->
+  <header class="topbar">
+    <div class="wrap bar">
+      <a class="brand" href="#top">Yogesh Dahal</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <a href="#about">About</a>
+        <a href="#expertise">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+        <a class="btn btn-small" href="assets/resume.pdf" download>Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="top">
+      <div class="wrap hero-grid">
+        <div>
+          <h1>I combine IT and CAD skills to support technical projects.</h1>
+          <p class="lede">I am a graduate of a Japanese vocational college (senmon gakko) with about six months of work experience at a construction management company. I work with HTML, JavaScript, Python, C++, AutoCAD, and JW CAD.</p>
+          <div class="actions">
+            <a class="btn" href="#work">View my work</a>
+            <a class="btn btn-outline" href="#contact">Contact me</a>
+          </div>
+          <dl class="facts">
+            <div><dt>Location</dt><dd>City, Country</dd></div>
+            <div><dt>Focus</dt><dd>IT and CAD</dd></div>
+            <div><dt>Availability</dt><dd>Open to new roles</dd></div>
+          </dl>
+        </div>
+
+        <!-- Replace this block with: <img class="portrait" src="assets/photo.jpg" alt="Yogesh Dahal"> -->
+        <div class="portrait" role="img" aria-label="Portrait placeholder">
+          <span>YD</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section" id="about">
+      <div class="wrap split">
+        <h2>About</h2>
+        <div class="prose">
+          <p>I studied science in higher secondary school in Nepal, then moved to Japan, where I completed two years at a Japanese language school and two years at a senmon gakko. I use Japanese and English in my studies and work.</p>
+          <p>I have about six months of work experience at a construction management company, where I used CAD and office tools. I am looking for a role where I can keep building my programming and drafting skills.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section class="section section-alt" id="expertise">
+      <div class="wrap">
+        <h2>Skills</h2>
+        <div class="columns">
+          <div>
+            <h3>Programming</h3>
+            <p>I write and read code to build web pages and small programs.</p>
+            <ul class="tags"><li>HTML</li><li>JavaScript</li><li>Python</li><li>C++</li></ul>
+          </div>
+          <div>
+            <h3>CAD drafting</h3>
+            <p>I prepare technical drawings in the CAD software used in construction.</p>
+            <ul class="tags"><li>AutoCAD</li><li>JW CAD</li></ul>
+          </div>
+          <div>
+            <h3>Office tools</h3>
+            <p>I write documents and organize data for daily office work.</p>
+            <ul class="tags"><li>MS Word</li><li>Excel</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EXPERIENCE: duplicate a .job block for each role, newest first ===== -->
+    <section class="section" id="experience">
+      <div class="wrap">
+        <h2>Experience</h2>
+        <div class="jobs">
+          <article class="job">
+            <p class="dates">About 6 months</p>
+            <div>
+              <h3>Your Job Title</h3>
+              <p class="org">Company name, construction management, City</p>
+              <ul>
+                <li>Describe one task you did, such as drawing, data entry, or site support.</li>
+                <li>Describe the tools you used and what you learned.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EDUCATION: newest first ===== -->
+    <section class="section section-alt" id="education">
+      <div class="wrap">
+        <h2>Education</h2>
+        <div class="jobs">
+          <article class="job">
+            <p class="dates">2 years</p>
+            <div>
+              <h3>Senmon gakko (vocational college), Japan</h3>
+              <p class="org">School name, Your course name</p>
+            </div>
+          </article>
+          <article class="job">
+            <p class="dates">2 years</p>
+            <div>
+              <h3>Japanese language school, Japan</h3>
+              <p class="org">School name</p>
+            </div>
+          </article>
+          <article class="job">
+            <p class="dates">Completed</p>
+            <div>
+              <h3>Higher secondary school, +2 Science</h3>
+              <p class="org">School name, Nepal</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SELECTED WORK: replace each href with a link to the project ===== -->
+    <section class="section" id="work">
+      <div class="wrap">
+        <h2>Selected work</h2>
+        <div class="projects">
+          <a class="project featured" href="#">
+            <div class="thumb" aria-hidden="true">Image</div>
+            <div class="project-body">
+              <h3>Featured project name</h3>
+              <p>Describe a website, program, or CAD drawing you made. State what it does and the tools you used.</p>
+              <ul class="tags"><li>AutoCAD</li><li>Drawing</li></ul>
+            </div>
+          </a>
+          <a class="project" href="#">
+            <div class="thumb" aria-hidden="true">Image</div>
+            <div class="project-body">
+              <h3>Project name</h3>
+              <p>Describe the project and your part in it in two sentences.</p>
+              <ul class="tags"><li>Python</li><li>Program</li></ul>
+            </div>
+          </a>
+          <a class="project" href="#">
+            <div class="thumb" aria-hidden="true">Image</div>
+            <div class="project-body">
+              <h3>Project name</h3>
+              <p>Describe the project and your part in it in two sentences.</p>
+              <ul class="tags"><li>HTML</li><li>JavaScript</li></ul>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section section-dark" id="contact">
+      <div class="wrap contact-grid">
+        <div>
+          <h2>Contact</h2>
+          <p>I am open to new roles and projects. Send a few details and I will reply within two business days.</p>
+          <ul class="links">
+            <li><a href="mailto:you@example.com">you@example.com</a></li>
+            <li><a href="https://www.linkedin.com/in/your-profile" rel="noopener">LinkedIn</a></li>
+            <li>City, Country</li>
+          </ul>
+        </div>
+
+        <form id="contact-form" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+            <p class="error" id="name-error" hidden>Enter your name.</p>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+            <p class="error" id="email-error" hidden>Enter a valid email address.</p>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <p class="error" id="message-error" hidden>Enter a message.</p>
+          </div>
+          <button class="btn btn-light" type="submit">Send message</button>
+          <p class="status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="wrap foot">
+      <p>&copy; <span id="year">2026</span> Yogesh Dahal</p>
+      <a href="#top">Back to top</a>
+    </div>
+  </footer>
+</body>
+</html>
+EOF
+printf '\n/* Skill tags inside the Skills columns */\n.columns .tags { margin-top: 1rem; }\n' >> css/styles.css
+sed -i 's/^- `assets\/`: favicon, plus your `photo.jpg` and `resume.pdf` (add these)/- `assets\/`: favicon, plus your `photo.jpg` and `resume.pdf` (add these)/' README.md
+cd .. && rm -f portfolio-site.zip && zip -rq portfolio-site.zip portfolio-site && ls -la portfolio-site.zip && grep -c "article" portfolio-site/index.html
