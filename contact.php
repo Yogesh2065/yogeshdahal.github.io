@@ -7,8 +7,7 @@
 
 header('Content-Type: application/json');
 
-// ---- CONFIGURE YOUR EMAIL HERE ----
-$yourEmail = 'yogesh.dahal@example.com';   // <-- change this
+$yourEmail = 'dahalyogesh789@gmail.com';  
 // ----------------------------------
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
