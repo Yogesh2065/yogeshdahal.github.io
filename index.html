@@ -1097,7 +1097,7 @@ contactForm.addEventListener('submit', async (e) => {
     throw new Error('PHP not available');
   } catch (err) {
     // Fallback: mailto (works on any static hosting like GitHub Pages)
-    const mailto = `mailto:yogesh.dahal@example.com?subject=Portfolio Contact from ${encodeURIComponent(name)}&body=${encodeURIComponent(message + '\n\nFrom: ' + email)}`;
+    const mailto = `mailto:dahalyogesh789@gmail.com?subject=Portfolio Contact from ${encodeURIComponent(name)}&body=${encodeURIComponent(message + '\n\nFrom: ' + email)}`;
     window.location.href = mailto;
     formMessage.className = 'form-message success';
     formMessage.textContent = '📧 Opening your email app to send the message...';
