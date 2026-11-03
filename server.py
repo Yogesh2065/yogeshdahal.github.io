@@ -20,7 +20,7 @@ PORT = 8000
 
 class Handler(http.server.SimpleHTTPRequestHandler):
     def end_headers(self):
-        # Prevent browser caching so edits show up immediately
+        
         self.send_header('Cache-Control', 'no-store, no-cache, must-revalidate')
         super().end_headers()
 
